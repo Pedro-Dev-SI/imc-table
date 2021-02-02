@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabela IMC</title>
+</head>
+<body>
+
+    <h1>IMC</h1>
+
+    <hr id="first-line">
+
+    <section class="container">
+  
+        <table class="tabela-pessoas">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Peso</th>
+                    <th>Altura</th>
+                    <th>IMC</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="paciente" id="pp">
+                    <td class="info-nome">Carlos</td>
+                    <td class="info-peso">87</td>
+                    <td class="info-altura">1.80</td>
+                    <td class="info-imc">0</td>
+                </tr>
+
+                <tr class="paciente">
+                    <td class="info-nome">John</td>
+                    <td class="info-peso">75</td>
+                    <td class="info-altura">1.75</td>
+                    <td class="info-imc">0</td>
+                </tr>
+
+                <tr class="paciente">
+                    <td class="info-nome">Marth</td>
+                    <td class="info-peso">62</td>
+                    <td class="info-altura">1.55</td>
+                    <td class="info-imc">0</td>
+                </tr>
+
+                <tr class="paciente">
+                    <td class="info-nome">Peter</td>
+                    <td class="info-peso">65</td>
+                    <td class="info-altura">1.72</td>
+                    <td class="info-imc">0</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form class="add-paciente">
+            <div class="nome-form">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div class="peso-form">
+                <label for="peso">Peso</label>
+                <input type="number" id="peso" name="peso" placeholder="Kg">
+            </div>
+            <div class="altura-form">
+                <label for="altura">Altura</label>
+                <input type="number" id="altura" placeholder="1.70" name="altura">
+            </div>
+
+            <button class="add-btn">Adicionar</button>
+
+        </form>
+
+    </section>
+
+    <script src="calcula-Imc.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>
